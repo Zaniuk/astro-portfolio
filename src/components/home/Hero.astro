@@ -1,7 +1,8 @@
 ---
 import { IHeroProps } from "@types";
 
-const { name, about } = Astro.props as IHeroProps;
+const { name, about , accent} = Astro.props as IHeroProps;
+console.log(Astro.props);
 ---
 
 <section>
@@ -9,5 +10,8 @@ const { name, about } = Astro.props as IHeroProps;
   <h1>{name}</h1>
   <p class="dark:text-light text-lg mb-16">
     {about}
+  </p>
+  <p class="text-cyan-600 font-bold text-lg mb-16">
+    {accent}
   </p>
 </section>
