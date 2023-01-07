@@ -8,6 +8,7 @@ export interface IHeroProps {
   name: string;
   about: string;
   accent: string;
+  profile: string;
 }
 
 export interface IExperience {
