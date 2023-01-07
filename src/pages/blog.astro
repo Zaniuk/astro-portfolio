@@ -1,0 +1,22 @@
+---
+title: 'Geronimo Zaniuk - Blog'
+import BlogPostWrapper from "@components/blog/BlogPostWrapper.astro";
+import MetaHead from "@components/general/MetaHead.astro";
+import { info } from "@data";
+import Layout from "@layouts/Layout.astro";
+---
+<html lang="en">
+  <head>
+    <MetaHead
+      title={"Geronimo Zaniuk - Blog"}
+      description={info.about}
+      ogImageUrl={"/assets/images/profile.png"}
+    />
+  </head>
+  <body>
+    <Layout>
+      <h1 class="py-6">Blog</h1>
+      <BlogPostWrapper />
+    </Layout>
+  </body>
+</html>
