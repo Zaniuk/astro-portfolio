@@ -1,97 +1,130 @@
 export const info = {
-  baseUrl: "https://astro-portfolio-uzair.vercel.app",
-  name: "Uzair Ahmed",
+  baseUrl: "https://www.zaniuk.tech",
+  profile: "/assets/images/ppicture.webp",
+  name: "Geronimo Zaniuk",
   jobDescription: "Web Developer",
-  about: `I'm a software engineer based in Karachi, Pakistan.
-   I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.
-   I have been working for 3 year, with a demonstrated history of working in the Computer Software industry. Skilled in Front-end Development.
-   I have 3 years of experience in HTML, CSS, SCSS, JavaScript, Bootstrap, tailwind CSS, StyledComponent, React JS and Next JS. Hence,
-   I have successfully completed several web projects from scratch. 
-   Yet, I learn continuously and never stop exploring new technologies.
-   So, I have also gained knowledge of Node JS, Express JS, Mongo DB, Python,
-   firebase and React Native with time.
+  about: `Un apasionado desarrollador de software full-stack con sede en Buenos Aires, Argentina. 
+  Desde muy joven, siempre he estado interesado en la tecnología y cómo puede ser utilizada para resolver problemas y mejorar la vida de las personas.
+  Mi experiencia incluye más de tres años trabajando en proyectos de desarrollo full-stack, y he desarrollado una fuerte habilidad en JavaScript (especialmente Node.js y React.js) y Python.
+  `,
+  accent: `
+  Si estás buscando a un desarrollador con una pasión por la tecnología y un compromiso con la excelencia, no dudes en ponerte en contacto conmigo.
   `,
 
   experience: [
     {
-      name: "InterNative Labs, LLC",
-      location: "Karāchi, Sindh, Pakistan",
-      startDate: "Apr 2022",
+      name: "Alkemy Labs",
+      location: "Argentina, Buenos Aires",
+      startDate: "Sep 2022",
       endDate: "Present",
       description: [
-        "- Developing screens and UI components for the web application using React and Tailwind.",
-        "- Fixing UI issues and integrating backend APIs with Redux Saga.",
+        "- La arquitectura propuesta por mí logró un tiempo de respuesta rápido y estable del sistema, lo que resultó en una mejora significativa en la satisfacción del usuario final.",
+        "- Aplicando los principios SOLID y arquitectura CLEAN he diseñado y desarrollado un sistema que se ha mostrado altamente escalable y fácil de mantener y actualizar en el futuro.",
+      ],
+      techStack: [
+
+      ]
+    },
+
+    {
+      name: "Profesor de React.js y Node.js (Freelance)",
+      location: "Argentina, Buenos Aires",
+      startDate: "May 2022",
+      endDate: "Presente",
+      description: [
+        "✓ Diseñar planes de estudio personalizados que ayuden a los alumnos a alcanzar sus metas y objetivos académicos.",
+        "✓ Implementar buenas prácticas en el diseño de las rutas de estudio, como la lectura de documentaciones oficiales y la creación de arquitecturas de proyecto sólidas y bien pensadas.",
+        "✓ Enseñar a los alumnos cómo escribir código limpio, escalable y mantenible, lo que les ayudará a desarrollar habilidades técnicas valiosas en su carrera profesional.",
       ],
     },
 
     {
-      name: "Coupon Approve (Remote)",
-      location: "Amsterdam, North Holland, Netherlands",
-      startDate: "Nov 2020",
-      endDate: "Apr 2022",
+      name: "J.P Morgan Chase & Co.",
+      location: "Buenos Aires, Argentina",
+      startDate: "Mar 2022",
+      endDate: "Nov 2022",
       description: [
-        "✓ Developing code in accordance with appropriate design and architectural rules",
-        "✓ Documenting, testing, deployment, maintenance, support of platforms, applications, databases and solutions",
-        "✓ Help and training of other colleagues",
-        "✓ Others tasks connected to the nature of the job",
-        "✓ Code Improvements and Refactoring ",
-        "✓ Best Practices and Rules Maintainer",
+        "- Aplicar metodologías ágiles y utilizar GitFlow como sistema de control de versiones en el desarrollo de software.",
+        "- Utilizar patrones de diseño para la estructuración y organización del código, con el fin de mejorar la legibilidad y mantenibilidad del mismo.",
+        "- Diseñar y desarrollar soluciones utilizando arquitecturas límpias y microservicios, con el objetivo de lograr una mayor modularidad y escalabilidad de la aplicación.",
+        "- Desarrollar aplicaciones eficientes y adaptables a diferentes proyectos y situaciones, con el fin de cumplir con los requisitos y necesidades del usuario de manera eficaz."
       ],
     },
-
     {
-      name: "Interns Pakistan",
-      location: "Pakistan",
-      startDate: "Oct 2020",
-      endDate: "Nov 2020",
+      name: "PCShowComputación",
+      location: "Buenos Aires, Argentina",
+      startDate: "Mar 2018",
+      endDate: "Abr 2020",
       description: [
-        "An Immersive Internship Program that prepares me for the world's most in-demand career. A six weeks program completely based on learning and challenges.",
-        "The internship track is built by an industry expert that let develop the skills in the areas most important ",
+        "✓ Mejorar la eficiencia del registro de usuarios y las incidencias, lo que reduce el tiempo y los esfuerzos necesarios para llevar un registro completo y preciso.",
+        "✓ Acelerar el tiempo de respuesta en búsquedas, lo que permite a los usuarios y clientes encontrar la información que necesitan de manera más rápida y sencilla.",
+        "✓ Aumentar la tolerancia a errores del sistema aplicando filtros y normalizado de datos.",
+        "✓ Decreció el coste de capacitación de nuevos empleados gracias a una interfaz amigable para el usuario."
       ],
     },
   ],
 
   education: [
     {
-      name: "Pakistan Institute of Professional Science & Technology (PIPS-TECH)",
-      location: "Karāchi, Sindh, Pakistan",
-      startDate: "2019",
-      endDate: "2022",
+      name: "Universidad Nacional de el Oeste",
+      location: "Merlo, Buenos Aires, Argentina",
+      startDate: "2022",
+      endDate: "2028",
       description: [
-        "Diploma of Associate Engineering,  Computer Information Technology (CIT)",
+        "Licenciatura en Informática",
       ],
-    },
-    {
-      name: "Govt. Degree Boys College Buffer Zone",
-      location: "Karāchi, Sindh, Pakistan",
-      startDate: "2018",
-      endDate: "2020",
-      description: ["Intermediate, Pre-Engineering"],
-    },
-    {
-      name: "Ghazi Foundation Schools & Colleges",
-      location: "Karāchi, Sindh, Pakistan",
-      startDate: "2016",
-      endDate: "2018",
-      description: ["Matriculation,  Computer Science"],
     },
   ],
 
   socialMedia: {
-    facebook: "https://www.facebook.com/profile.php?id=100022899849583",
-    twitter: "https://twitter.com/Uzzii_21",
-    github: "https://github.com/uzzii-21",
-    email: "uzairahmed@74372gmail.com",
-    linkedin: "https://www.linkedin.com/in/uzzii21/",
+    github: "https://github.com/Zaniuk",
+    email: "geronimozaniuk2000@gmail.com",
+    linkedin: "https://www.linkedin.com/in/geronimo-zaniuk/",
   },
 
   projects: [
     {
-      title: "Astro Portfolio",
+      title: "Alkemy ONG",
       isFeatured: true,
-      thumbnail: "/assets/images/astro-portfolio.png",
-      githubUrl: "https://github.com/uzzii-21/astro-portfolio",
-      liveUrl: "https://astro-portfolio-uzair.vercel.app/",
+      thumbnail: "/assets/images/projects/ong.webp",
+      githubUrl: "https://github.com/Zaniuk/OT288-client",
+      liveUrl: "https://ong.zaniuk.tech/",
     },
+    {
+      title: "Portfolio CMS",
+      isFeatured: true,
+      thumbnail: "/assets/images/projects/cms.webp",
+      githubUrl: "https://github.com/Zaniuk/Portfolio-Server",
+      liveUrl: "https://www.zaniuk.tech/",
+    },
+    {
+      title: "Blog API",
+      isFeatured: true,
+      thumbnail: "/assets/images/projects/GERONIMO.webp",
+      githubUrl: "https://github.com/Zaniuk/portfolio-backend",
+      liveUrl: "https://ong.zaniuk.tech/",
+    },
+    {
+      title: "ABM Bancario",
+      isFeatured: true,
+      thumbnail: "/assets/images/projects/money.webp",
+      githubUrl: "https://github.com/Zaniuk/AlkemyChallenge",
+      liveUrl: "https://abm.zaniuk.tech/",
+    },
+    {
+      title: "Anime Recommendations App",
+      isFeatured: true,
+      thumbnail: "/assets/images/projects/anime.webp",
+      githubUrl: "https://github.com/Zaniuk/Anime-App",
+      liveUrl: "https://anime.zaniuk.tech/",
+    },
+    {
+      title: "React Weather App",
+      isFeatured: true,
+      thumbnail: "/assets/images/projects/weather.webp",
+      githubUrl: "https://github.com/Zaniuk/WeatherReactApp",
+      liveUrl: "https://weather.zaniuk.tech/",
+    },
+    
   ],
 };
