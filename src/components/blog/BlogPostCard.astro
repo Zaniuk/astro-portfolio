@@ -1,21 +1,25 @@
 ---
-// Tailwind
----
+import { IBlogPostCardProps } from "@types";
+import BlogPostCardDate from "./BlogPostCardDate.astro";
 
-<div class="max-w-sm w-full lg:max-w-full lg:flex dark:text-white my-4 shadow-md ">
-  <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('/assets/images/astro-portfolio.png')" title="Woman holding a mug">
-  </div>
-  <div class="lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-    <div class="mb-8">
-      <div class="text-gray-900 font-bold text-xl mb-2">Can coffee make you a better developer?</div>
-      <p class="dark:text-gray text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
-    </div>
-    <div class="flex items-center">
-      <img class="w-10 h-10 rounded-full mr-4" src="/assets/images/ppicture.webp" alt="Avatar of Jonathan Reinink">
+const { title, metadata, thumbnail, modified_at, slug }  = Astro.props as IBlogPostCardProps;
+---
+<a href={`/${slug}`}>
+
+  <div class="max-w-sm w-full lg:max-w-full lg:flex dark:text-white my-4 shadow-md ">
+    <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style={`background-image: url(${thumbnail})`} title="Woman holding a mug"></div>
+    <div class="lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+      <div class="mb-8">
+        <div class="text-gray-900 font-bold text-xl mb-2">{title}</div>
+        <p class="dark:text-gray text-base">{metadata.description}</p>
+      </div>
+      <div class="flex items-center">
+        <img class="w-10 h-10 rounded-full mr-4" src="/assets/images/ppicture.webp" alt="Avatar of Jonathan Reinink">
       <div class="text-sm">
         <p class="dark:text-gray leading-none">Zaniuk</p>
-        <p class="dark:text-gray">Aug 18</p>
+        <BlogPostCardDate date={modified_at} />
       </div>
     </div>
   </div>
 </div>
+</a>
