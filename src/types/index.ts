@@ -37,3 +37,14 @@ export interface IProjects {
 export interface IProjectDetails {
   projectDetail: IProject;
 }
+
+export interface IBlogPostCardProps {
+  title: string;
+  slug: string;
+  thumbnail: string;
+  description: string;
+  modified_at: string;
+  metadata: {
+    description: string;
+  };
+}
