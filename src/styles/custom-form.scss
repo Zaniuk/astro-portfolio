@@ -1,0 +1,41 @@
+ 
+//Tailwind imports 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+  
+
+h1{
+  @apply text-6xl my-4;
+}
+#contact-form{
+  label{
+    font-size: 1.2rem;
+    @apply text-cyan-500 py-2;
+  }
+  input, textarea{
+    //both themes
+    @apply py-4 px-2 mb-2 rounded-md;
+    //Light theme
+    @apply bg-slate-200 shadow-md border-2 border-slate-300;
+
+    //dark theme
+    @apply dark:bg-neutral-800 dark:text-white dark:border-neutral-700;
+    @apply dark:caret-cyan-500;
+
+    
+    
+  }
+  textarea{
+    @apply resize-none mb-4;
+  }
+
+  button{
+    @apply text-xl p-4 border-2 rounded-lg    hover:rounded-2xl
+    text-cyan-500 border-cyan-500
+    hover:text-white hover:bg-cyan-500
+    dark:text-purple-500 dark:border-purple-500
+    dark:hover:text-white dark:hover:bg-purple-500
+    transition-all  ease-in-out delay-100 duration-500
+  }
+}

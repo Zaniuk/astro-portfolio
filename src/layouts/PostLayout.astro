@@ -1,0 +1,24 @@
+---
+import Footer from "@components/general/Footer.astro";
+import MetaHead from "@components/general/MetaHead.astro";
+import Navbar from "@components/general/Navbar.astro";
+import { info } from "@data";
+import '../styles/custom-styles.css'
+---
+
+<html lang="en">
+  <head>
+    <MetaHead
+      title={"Geronimo Zaniuk - Blog"}
+      description={info.about}
+      ogImageUrl={"/assets/images/profile.png"}
+    />
+  </head>
+  <body class="bg-light dark:bg-dark"> 
+    <main class="container max-w-[1112px] mx-auto px-4">
+      <Navbar />
+      <slot />
+      <Footer />
+    </main>
+  </body>
+</html>
