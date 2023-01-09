@@ -24,6 +24,8 @@
       "@types": [
         "src/types"
       ]
-    }
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
   }
 }
