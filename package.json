@@ -17,7 +17,8 @@
     "sass": "^1.57.1"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "cosmicjs": "^4.3.1",
-    "moment": "^2.29.4"
+    "emailjs": "^4.0.1"
   }
 }
