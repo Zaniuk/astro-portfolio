@@ -1,0 +1,51 @@
+---
+import MetaHead from "@components/general/MetaHead.astro";
+import { info } from "@data";
+import Layout from "@layouts/Layout.astro";
+import "../styles/custom-form.scss";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <MetaHead
+      title={"Portfolio"}
+      description={info.about}
+      ogImageUrl={"/assets/images/profile.png"}
+    />
+  </head>
+
+  <body>
+    <Layout>
+      <div class="max-w-lg mx-auto">
+        <h1>Contacto</h1>
+        <form  id="contact-form" class="flex flex-col w-full">
+          <label for="name">Nombre</label>
+          <input type="text" name="name" id="name" />
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+          <label for="message">Mensaje</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </Layout>
+    <script>
+      import emailjs from '@emailjs/browser';
+      const form = document.getElementById("contact-form") as HTMLFormElement;
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
+        console.log(data)
+        emailjs.send('service_6n7r35s', 'template_1j6w6oi', data, 'l7OReEpuQx8r1_E4q')
+          .then((result) => {
+              console.log(result.text);
+              location.href = "/"
+          }, (error) => {
+              console.log(error.text);
+          });
+      });
+    </script>
+  </body>
+</html>
