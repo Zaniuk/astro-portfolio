@@ -17,6 +17,7 @@
     "sass": "^1.57.1"
   },
   "dependencies": {
+    "@astrojs/vercel": "^2.4.0",
     "@emailjs/browser": "^3.10.0",
     "cosmicjs": "^4.3.1",
     "emailjs": "^4.0.1"
