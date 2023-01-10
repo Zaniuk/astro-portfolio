@@ -16,7 +16,7 @@ export const info = {
       name: "Alkemy Labs",
       location: "Argentina, Buenos Aires",
       startDate: "Sep 2022",
-      endDate: "Present",
+      endDate: "Presente",
       description: [
         "- La arquitectura propuesta por mí logró un tiempo de respuesta rápido y estable del sistema, lo que resultó en una mejora significativa en la satisfacción del usuario final.",
         "- Aplicando los principios SOLID y arquitectura CLEAN he diseñado y desarrollado un sistema que se ha mostrado altamente escalable y fácil de mantener y actualizar en el futuro.",

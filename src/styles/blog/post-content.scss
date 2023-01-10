@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+#post-content{
+  strong{
+    @apply dark:text-cyan-300 text-cyan-500; 
+  }
+  em{
+    @apply dark:text-purple-300 text-purple-500;
+  }
+}

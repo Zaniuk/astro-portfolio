@@ -11,7 +11,15 @@ export async function getAllPosts() {
     .find({
       type: "posts",
     })
-    .props("title,slug,metadata,thumbnail,modified_at")
+    .props("title,slug,metadata,thumbnail,content,modified_at")
   
   return data.objects;
+}
+
+export async function getPostBySlug(slug) {
+  const data = await bucket.objects
+  .find({slug})
+  .props("title,slug,metadata,thumbnail,modified_at,content")
+
+  return data.object;
 }
