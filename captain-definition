@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "dockerfileLines": [
+                        "FROM node:18-alpine",
+                        "RUN npm install && npm cache clean --force",
+                        "RUN npm run build",
+                        "RUN mkdir -p /usr/src/app",
+                        "COPY ./dist /usr/src/app",
+                        "CMD [ \"node\", \"./server/entry.mjs\" ]"
+  ]
+}

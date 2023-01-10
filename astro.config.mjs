@@ -10,6 +10,9 @@ import vercel from "@astrojs/vercel/serverless";
 import react from "@astrojs/react";
 
 // https://astro.build/config
+import node from "@astrojs/node";
+
+// https://astro.build/config
 export default defineConfig({
   site: "https://astro-portfolio-uzair.vercel.app",
   integrations: [tailwind(), sitemap({
@@ -19,5 +22,7 @@ export default defineConfig({
     entryLimit: 10000
   }), robotsTxt(), react()],
   output: "server",
-  adapter: vercel()
+  adapter: node({
+    mode: "standalone"
+  })
 });
