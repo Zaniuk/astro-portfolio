@@ -14,7 +14,8 @@ import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astro-portfolio-uzair.vercel.app",
+  base: "/",
+  site: "https://test-portfolio.zaniuk.tech",
   integrations: [tailwind(), sitemap({
     changefreq: "weekly",
     priority: 0.7,
