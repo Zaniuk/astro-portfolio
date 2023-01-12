@@ -5,4 +5,4 @@ RUN npm ci
 COPY . .
 RUN npm run build
 EXPOSE 3000
-CMD ["node", "server/entry.mjs"]
+CMD ["node", "dist/server/entry.mjs"]
