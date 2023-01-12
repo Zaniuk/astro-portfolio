@@ -1,4 +1,5 @@
 ---
+import DownloadButton from "@components/general/DownloadButton.astro";
 import { IHeroProps } from "@types";
 import HeroButton from "./HeroButton.astro";
 
@@ -19,5 +20,6 @@ const { name, about , accent, profile} = Astro.props as IHeroProps;
   <p class="text-cyan-600 font-bold text-lg mb-16">
     {accent}
   </p>
-  <HeroButton/>
+  <HeroButton/> 
+  <DownloadButton/>
 </section>
