@@ -48,3 +48,20 @@ export interface IBlogPostCardProps {
     description: string;
   };
 }
+
+export enum EColors {
+  react = "text-cyan-600",
+  node = "text-green-600",
+  javascript = "text-yellow-400",
+  typescript = "text-cyan-700",
+  mongodb = "text-green-600",
+  postgresql = "text-blue-600",
+  html = "text-red-600", 
+  css = "text-blue-600",
+  sass = "text-pink-600",
+  tailwind = "text-blue-600",
+  git = "text-red-600",
+  dotnet = "text-cyan-600",
+  csharp = "text-purple-600",
+  python = "text-yellow-400",
+}

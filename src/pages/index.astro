@@ -6,6 +6,7 @@ import Hero from "@components/home/Hero.astro";
 import Experience from "@components/home/Experience.astro";
 import ProjectsWrapper from "@components/general/ProjectsWrapper.astro";
 import MetaHead from "@components/general/MetaHead.astro";
+import TechStack from "@components/home/TechStack.astro";
 
 const featureProjects = info.projects.map((project, index) => {
   if (project.isFeatured && index < 6) {
@@ -29,6 +30,7 @@ const featureProjects = info.projects.map((project, index) => {
       <Hero name={info.name} about={info.about} accent={info.accent} profile={info.profile} />
       <Experience title={"EXPERIENCIA"} details={info.experience} />
       <Experience title={"EDUCACIÓN"} details={info.education} />
+      <TechStack/>
       <section>
         <h2 class="w-[15rem] dark:text-light mt-16">PROYECTOS</h2>
         <ProjectsWrapper projects={featureProjects} />

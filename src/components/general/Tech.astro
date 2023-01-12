@@ -1,0 +1,11 @@
+---
+import { EColors } from "@types";
+
+const name = Astro.props.name as string; 
+const color = Astro.props.color as EColors;
+---
+
+<div class={`w-[76px] flex flex-col items-center ${color || 'text-white'}` }>
+  <slot/>
+  <h3 class="text-lg">{name}</h3>
+</div>

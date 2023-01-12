@@ -1,0 +1,51 @@
+---
+import { FaReact } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa";
+import { FcLinux } from "react-icons/fc";
+import { FaDatabase } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si";
+import { SiCsharp } from "react-icons/si";
+import { SiPython } from "react-icons/si";
+import { SiDotnet, SiJavascript } from "react-icons/si";
+import {SiTypescript} from "react-icons/si";
+import Tech from "@components/general/Tech.astro";
+import { EColors } from "@types";
+---
+
+<section>
+  <h2 class="dark:text-white uppercase my-8">Tecnologías principales</h2>
+  <div class="w-full flex gap-8 flex-wrap">
+    <Tech name="React" color={EColors.react}>
+      <FaReact size={64} />
+    </Tech>
+    <Tech name="NodeJS" color={EColors.node}>
+      <FaNodeJs size={64} />
+    </Tech>
+    <Tech name="TypeScript" color={EColors.typescript}>
+      <SiTypescript size={64} />
+    </Tech>
+    
+    <Tech name="Linux">
+      <FcLinux size={64} />
+    </Tech>
+    <Tech name="JavaScript" color={EColors.javascript}>
+      <SiJavascript size={64} />
+    </Tech>
+    <Tech name="SQL" color={EColors.typescript}>
+      <FaDatabase size={64} />
+    </Tech>
+    <Tech name="MongoDB" color={EColors.mongodb}>
+      <SiMongodb size={64} />
+    </Tech>
+    <Tech name="C#" color={EColors.csharp}>
+      <SiCsharp size={64} />
+    </Tech>
+    <Tech name="Python" color={EColors.python}>
+      <SiPython size={64} />
+    </Tech>
+    <Tech name=".NET" color={EColors.dotnet}>
+      <SiDotnet size={64} />
+    </Tech>
+    
+  </div>
+</section>
