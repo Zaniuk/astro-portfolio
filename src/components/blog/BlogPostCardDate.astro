@@ -1,8 +1,0 @@
----
-const {date} = Astro.props;
-const parsedDate = new Date(date).toLocaleDateString('es-ES', {
-  month: 'short',
-  day: 'numeric',
-});
----
-<p class="dark:text-gray">{parsedDate}</p>
