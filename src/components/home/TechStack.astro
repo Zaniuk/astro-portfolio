@@ -1,7 +1,7 @@
 ---
-import { FaReact, FaNodeJs, FaDatabase } from "react-icons/fa/index.js";
+import { FaReact, FaNodeJs, FaDatabase, FaDigitalOcean, FaGithub } from "react-icons/fa/index.js";
 import { FcLinux } from "react-icons/fc/index.js";
-import { SiDotnet, SiJavascript, SiPython, SiCsharp, SiMongodb, SiTypescript } from "react-icons/si/index.js";
+import { SiDotnet, SiJavascript, SiPython, SiCsharp, SiMongodb, SiTypescript, SiJirasoftware , SiJava, SiSpringboot} from "react-icons/si/index.js";
 import Tech from "@components/general/Tech.astro";
 import { EColors } from "@types";
 ---
@@ -37,9 +37,28 @@ import { EColors } from "@types";
       <SiCsharp size={64} />
     </Tech>
 
-    <Tech name=".NET" color={EColors.dotnet}>
+    <Tech name=".NET Core" color={EColors.dotnet}>
       <SiDotnet size={64} />
     </Tech>
-    
+    <Tech name="GitHub">
+      <FaGithub size={64} />
+    </Tech>
+  </div>
+  <h2 class="dark:text-white uppercase my-8">Tecnologías secundarias</h2>
+  <div class="w-full flex gap-8 flex-wrap">
+    <Tech name="Jira" color={EColors.tailwind}>
+      <SiJirasoftware size={64} />
+    </Tech>
+    <Tech name="DigitalOcean" color={EColors.typescript}>
+      <FaDigitalOcean size={64} />
+    </Tech>
+    <Tech name="Java" color={EColors.html}>
+      <SiJava size={64} />
+    </Tech>
+    <Tech name="Spring Boot" color={EColors.mongodb}>
+      <SiSpringboot size={64} />
+    </Tech>
+
+
   </div>
 </section>
