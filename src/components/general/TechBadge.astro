@@ -1,0 +1,7 @@
+---
+const {color}  = Astro.props;
+---
+
+<div class={`w-fit flex px-4 rounded-full badge text-white ${color}`}>
+  <slot/>
+</div>

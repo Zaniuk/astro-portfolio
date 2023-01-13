@@ -1,3 +1,4 @@
+import { EBGColors, IExperience } from "@types";
 export const info = {
   baseUrl: "https://www.zaniuk.tech",
   profile: "/assets/images/ppicture.webp",
@@ -22,12 +23,37 @@ export const info = {
         "- Aplicando los principios SOLID y arquitectura CLEAN he diseñado y desarrollado un sistema que se ha mostrado altamente escalable y fácil de mantener y actualizar en el futuro.",
       ],
       techStack: [
+        {
+          name: "Node.js",
+          color: EBGColors.green
+        },
+        {
+          name: "React.js",
+          color: EBGColors.cyan
+        },
+        {
+          name: "MySQL",
+          color: EBGColors.red
+        },
+        {
+          name: "Sequelize",
+          color: EBGColors.pink
+        },
+        {
+          name: "MaterialUI",
+          color: EBGColors.purple
+        },
+        {
+          name: "AWS",
+          color: EBGColors.orange
+        }
+        
 
       ]
     },
 
     {
-      name: "Profesor de React.js y Node.js (Freelance)",
+      name: "Profesor de React.js y Node.js Freelance",
       location: "Argentina, Buenos Aires",
       startDate: "May 2022",
       endDate: "Presente",
@@ -36,6 +62,16 @@ export const info = {
         "✓ Implementar buenas prácticas en el diseño de las rutas de estudio, como la lectura de documentaciones oficiales y la creación de arquitecturas de proyecto sólidas y bien pensadas.",
         "✓ Enseñar a los alumnos cómo escribir código limpio, escalable y mantenible, lo que les ayudará a desarrollar habilidades técnicas valiosas en su carrera profesional.",
       ],
+      techStack: [
+        {
+          name: "Node.js",
+          color: EBGColors.green
+        },
+        {
+          name: "React.js",
+          color: EBGColors.cyan
+        }
+      ]
     },
 
     {
@@ -49,20 +85,79 @@ export const info = {
         "- Diseñar y desarrollar soluciones utilizando arquitecturas límpias y microservicios, con el objetivo de lograr una mayor modularidad y escalabilidad de la aplicación.",
         "- Desarrollar aplicaciones eficientes y adaptables a diferentes proyectos y situaciones, con el fin de cumplir con los requisitos y necesidades del usuario de manera eficaz."
       ],
+      techStack: [
+        {
+          name: "Node.js",
+          color: EBGColors.green
+
+        },
+        {
+          name: "React.js",
+          color: EBGColors.cyan
+        },
+        {
+          name: "MongoDB",
+          color: EBGColors.green
+        },
+        {
+          name: "Express",
+          color: EBGColors.green
+        },
+        {
+          name: "Bootstrap",
+          color: EBGColors.purple
+        },
+        {
+          name: "Git",
+          color: EBGColors.red
+        },
+        {
+          name: "TypeScript",
+          color: EBGColors.blue
+        }
+      ]
     },
     {
       name: "PCShowComputación",
       location: "Buenos Aires, Argentina",
       startDate: "Mar 2018",
       endDate: "Abr 2020",
+      
       description: [
         "✓ Mejorar la eficiencia del registro de usuarios y las incidencias, lo que reduce el tiempo y los esfuerzos necesarios para llevar un registro completo y preciso.",
         "✓ Acelerar el tiempo de respuesta en búsquedas, lo que permite a los usuarios y clientes encontrar la información que necesitan de manera más rápida y sencilla.",
         "✓ Aumentar la tolerancia a errores del sistema aplicando filtros y normalizado de datos.",
         "✓ Decreció el coste de capacitación de nuevos empleados gracias a una interfaz amigable para el usuario."
       ],
+      techStack: [
+        {
+          name: "Python",
+          color: EBGColors.green
+        },
+        {
+          name: "Flask",
+          color: EBGColors.darkgreen
+        },
+        {
+          name: "FastAPI (Migración)",
+          color: EBGColors.green
+        },
+        {
+          name: "MySQL",
+          color: EBGColors.red
+        },
+        {
+          name: "Linux Server",
+          color: EBGColors.purple
+        },
+        {
+          name: "Documentación",
+          color: EBGColors.orange
+
+        }
+    ]
     },
-  ],
+  ] as IExperience[],
 
   education: [
     {
